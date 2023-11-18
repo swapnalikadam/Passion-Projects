@@ -6,7 +6,7 @@ I have created various functions to learn Event Handling-
 1. saveIssue(e)
    Purpose: Saves a new issue.
   Actions:
-  - Node.js, version- 12.x Retrieves issue details from the input fields.
+  - Retrieves issue details from the input fields.
   . Generates a unique issue ID using the Chance library.
   . Sets the initial status of the issue to 'Open'.
   . Stores the issue in the local storage.
