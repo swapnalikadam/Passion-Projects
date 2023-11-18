@@ -1,4 +1,4 @@
-# Resposive-Website-using-HTML5-and-CSS3
+# Resposive Website using HTML5 and CSS3
 
 After graduating, I pursued my passion for web development by designing a website to align with industry standards. Following research, I embraced HTML5 for markup and CSS3 for styling, recognizing their trendiness in web development. Ensuring responsiveness for both desktop and phone screens became a primary focus.
 
