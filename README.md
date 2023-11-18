@@ -4,8 +4,8 @@ After exploring HTML5 and CSS3, I have decided to understand the workings of Jav
 
 I have created various functions to learn Event Handling- 
 1. saveIssue(e)
-   Purpose: Saves a new issue.
-  Actions:
+   Saves a new issue.
+  
    - Retrieves issue details from the input fields.
    - Generates a unique issue ID using the Chance library.
    - Sets the initial status of the issue to 'Open'.
