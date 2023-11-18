@@ -1,9 +1,9 @@
-document.getElemenyById('issueInputForm').addEventListner('submit', saveIssue);
+document.getElementById('issueInputForm').addEventListner('submit', saveIssue);
 
 function saveIssue(e){
-	var	issueDesc = document.getElemenyById('issueDescInput').value;
-	var issueSeverity = document.getElemenyById('issueSeverityInput').value;
-	var issueAssignedTo = document.getElemenyById('issueAssignedTo').value;
+	var	issueDesc = document.getElementById('issueDescInput').value;
+	var issueSeverity = document.getElementById('issueSeverityInput').value;
+	var issueAssignedTo = document.getElementById('issueAssignedTo').value;
 	var issueId = chance.guid();
 	var issueStatus = 'Open';
 
@@ -19,17 +19,17 @@ function saveIssue(e){
 			issues.push(issue);
 			localStorage.setItem('issues', JSON.stringify(issues));
 		}else {
-			var issues = JASON.parse(localStorage.getItem('issues'));
+			var issues = JSON.parse(localStorage.getItem('issues'));
 			issues.push(issue);
-			localStorage.setItem('issues', JASON.stringify(issues));
+			localStorage.setItem('issues', JSON.stringify(issues));
 		}
-		document.getElemenyById('issueInputForm').reset();
-		fectchIssues();
+		document.getElementById('issueInputForm').reset();
+		fetchIssues();
 		e.preventDefault();
 }
 
 	function setStatusClosed(id) {
-		var issues = JASON.parse(localStorage.getItem('issues'));
+		var issues = JSON.parse(localStorage.getItem('issues'));
 		for (var i = 0; i < issues.length; i++) {
 			if(issues[i].id == id){
 				issues[i].status = 'Closed';
@@ -41,8 +41,8 @@ function saveIssue(e){
 		fetchIssues();
 	}
 
-function deleteIsuue(id){
-	var issues = JASON.parse(localStorage.getItem('issues'));
+function deleteIssue(id){
+	var issues = JSON.parse(localStorage.getItem('issues'));
 		for (var i = 0; i < issues.length; i++) {
 			if(issues[i].id == id){
 				issues.splice(i, 1);
@@ -54,10 +54,10 @@ function deleteIsuue(id){
 		fetchIssues();
 }
 
-function fectchIssues()
+function fetchIssues()
 {
-	var issues = JASON.parse(localStorage.getItem('issues'));
-	var issuesList = document.getElemenyById('issuesList');
+	var issues = JSON.parse(localStorage.getItem('issues'));
+	var issuesList = document.getElementById('issuesList');
 
 	issuesList.innerHTML = '';
 
