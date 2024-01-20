@@ -1,0 +1,1 @@
+I have designed a web page for Tabular API Data Display that fetches data from a product details REST API and presents it in a tabular form to users. Fetching API data and displaying it on a web page is integral to modern web applications. This approach enables real-time updates, ensuring that users receive the latest information without the need for full-page reloads every time.
