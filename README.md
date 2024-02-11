@@ -6,7 +6,7 @@ I have implemented the notification feature for the InstaPing application, utili
 
 # To Run The Code
 
-Split the terminal window into two parts and run both the client and server side simultaneously.
+Split the terminal window into two parts, and run both the client as well as server sides simultaneously.
 
 open the client folder path - run npm start in the terminal
 
