@@ -1,0 +1,51 @@
+/* 'display:  flex' to center everything */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container {
+  width: 50vh;
+  border-radius: 5px;
+  border: 0.5px solid lightseagreen ;
+}
+
+
+/* 'display:  flex' to center everything and to make button available below input 'flex-direction: column' so that login button will be below the username input*/
+.login { 
+  height: 50vh;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+input{
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/*  cursor:pointer when hover over Login button cursor will change to hand icon to click on it*/
+button{
+  width: 60%;
+  padding: 10px;
+  background-color: lightseagreen;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor:pointer;
+}
+
+/*  position: absolute, top: 15px;right: 20px to move username top-right corner of the screen*/
+.username {
+  font-weight: bold;
+  color: lightseagreen;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
