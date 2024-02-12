@@ -8,11 +8,8 @@ I have implemented the notification feature for the InstaPing application, utili
 
 Split the terminal window into two parts, and run both the client as well as server sides simultaneously.
 
-open the client folder path - run npm start in the terminal
-
-open the socket folder path - run npm start in the terminal
 
 | Command | Description |
 | --- | --- |
-| `npm start` | List all *new or modified* files |
-| `npm start` | Show file differences that **haven't been** staged |
+| `npm start` | To start the client|
+| `npm start` | To start the server |
