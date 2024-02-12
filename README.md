@@ -11,3 +11,8 @@ Split the terminal window into two parts, and run both the client as well as ser
 open the client folder path - run npm start in the terminal
 
 open the socket folder path - run npm start in the terminal
+
+| Command | Description |
+| --- | --- |
+| `npm start` | List all *new or modified* files |
+| `npm start` | Show file differences that **haven't been** staged |
